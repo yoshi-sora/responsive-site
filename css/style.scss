@@ -82,14 +82,15 @@ footer {
         margin: 60px 0 0 0;
     }
     a {
+        text-decoration: none;
         .ladies-button {
              margin: 30px auto 60px auto;
          @include border-radius(4px);
           padding: 5px 0;
           width: 180px;
           font-size: 1.5rem;
-           background-color: $keyColor;
-           color: red;
+           background-color: #EE87B4;
+           color: #F2F1F0;
         }
     }
 }
@@ -120,7 +121,7 @@ footer {
        a {
            .ladies-button {
                &:hover {
-                   background-color: darken($keyColor, 10%);
+                   background-color: darken(#EE87B4, 10%);
                }
            }
        }

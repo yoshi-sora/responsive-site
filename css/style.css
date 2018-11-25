@@ -67,16 +67,18 @@ footer {
   padding: 60px 0; }
   footer .ladies-top {
     margin: 60px 0 0 0; }
-  footer a .ladies-button {
-    margin: 30px auto 60px auto;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    padding: 5px 0;
-    width: 180px;
-    font-size: 1.5rem;
-    background-color: #562E00;
-    color: red; }
+  footer a {
+    text-decoration: none; }
+    footer a .ladies-button {
+      margin: 30px auto 60px auto;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      padding: 5px 0;
+      width: 180px;
+      font-size: 1.5rem;
+      background-color: #EE87B4;
+      color: #F2F1F0; }
 
 @media (min-width: 769px) {
   .main-photo {
@@ -90,6 +92,6 @@ footer {
     margin: 0 10px; }
 
   footer a .ladies-button:hover {
-    background-color: #231300; } }
+    background-color: #e85a98; } }
 
 /*# sourceMappingURL=style.css.map */
