@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fdfcf6; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Header
+------------------------------------------------------------*/
+.main-photo {
+  background-image: url(../images/man-597179_1280.jpg);
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+/* main
+------------------------------------------------------------*/
+main {
+  padding: 60px 0;
+  background-color: #BFB473; }
+  main .container {
+    width: 90%;
+    padding-top: 40px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  main .hair-box {
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 0;
+    padding: 0 0 30px 0;
+    background-color: #fdfcf6;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  main .hair-title {
+    background-color: #562E00;
+    color: #F2F1F0;
+    padding: 15px 0; }
+  main .hair-text {
+    padding: 20px 20px 0 20px; }
+
+/* footer
+------------------------------------------------------------*/
+footer {
+  padding: 60px 0; }
+  footer .ladies-top {
+    margin: 60px 0 0 0; }
+  footer a .ladies-button {
+    margin: 30px auto 60px auto;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 5px 0;
+    width: 180px;
+    font-size: 1.5rem;
+    background-color: #562E00;
+    color: red; }
+
+@media (min-width: 769px) {
+  .main-photo {
+    height: 500px; }
+
+  main .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  main .hair-box {
+    margin: 0 10px; }
+
+  footer a .ladies-button:hover {
+    background-color: #231300; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,132 @@
+@import "compass";
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// colors
+$baseColor: #fdfcf6;
+$subColor: #BFB473;
+$keyColor: #562E00;
+$fontColor: #4c4c4c;
+
+/* Base
+------------------------------------------------------------*/
+html {font-size: 62.5%;}
+
+body {
+    color: $fontColor;
+  font-size: 1.4rem;
+  font-family:$baseFontFamily;
+  line-height:1.6;
+  letter-spacing: 0.1em;
+  background-color: $baseColor;
+}
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center;
+}
+
+
+/* Header
+------------------------------------------------------------*/
+.main-photo {
+    background-image:
+    url(../images/man-597179_1280.jpg);
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+/* main
+------------------------------------------------------------*/
+main {
+    padding: 60px 0;
+    background-color: $subColor;
+    .container {
+      width: 90%;
+      padding-top:40px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      @include display-flex;
+      justify-content: space-between;
+      @include flex-direction(column);
+    }
+    .hair-box {
+         @include flex(1);
+         margin: 10px 0;
+         padding: 0 0 30px 0;
+         background-color: $baseColor;
+         @include border-radius(4px);
+         @include box-sizing(border-box);
+    }
+    .hair-title {
+        background-color: $keyColor;
+        color: #F2F1F0;
+        padding: 15px 0;
+        
+    }
+    .hair-text {
+        padding: 20px 20px 0 20px;
+    }
+} 
+
+/* footer
+------------------------------------------------------------*/
+footer {
+    padding: 60px 0;
+    .ladies-top {
+        margin: 60px 0 0 0;
+    }
+    a {
+        .ladies-button {
+             margin: 30px auto 60px auto;
+         @include border-radius(4px);
+          padding: 5px 0;
+          width: 180px;
+          font-size: 1.5rem;
+           background-color: $keyColor;
+           color: red;
+        }
+    }
+}
+
+
+
+
+
+
+//desktop
+@media (min-width: 769px) {
+   
+    //heade
+    .main-photo {
+        height: 500px;
+    }
+    //main
+    main {
+        .container {
+         @include flex-direction(row);
+         justify-content: space-between;
+    }
+    .hair-box {
+        margin:  0 10px;  
+    }
+    }
+   footer {
+       a {
+           .ladies-button {
+               &:hover {
+                   background-color: darken($keyColor, 10%);
+               }
+           }
+       }
+   }
+    
+    
+    
+}
+
